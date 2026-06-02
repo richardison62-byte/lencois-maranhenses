@@ -954,9 +954,10 @@ body {
 }
 
 .header-fixo.scrolled {
-  background: rgba(10, 60, 74, 0.92);
-  backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  background: rgba(10, 60, 74, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255,255,255,0.12);
 }
 
 .header-logo {
@@ -978,7 +979,7 @@ body {
 }
 
 .header-nav a {
-  font-size: 0.8rem;
+  font-size: 0.90rem;
   font-weight: 500;
   color: rgba(255,255,255,0.7);
   text-decoration: none;

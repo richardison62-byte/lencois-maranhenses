@@ -45,12 +45,14 @@ export default function PasseioCard({ passeio, onClick }) {
               {passeio.soPrivativo ? 'Preço' : 'Privativo'}
             </span>
             <div className="preco-valor">
-              R$ {passeio.precoPorPessoa
-                ? passeio.privatePricePerPerson
-                : passeio.privativo?.[2] || passeio.privatePricePerPerson}
-              <span>
-                {passeio.precoPorPessoa ? ' /pessoa' : ' (2 pax)'}
-              </span>
+              R$ {passeio.id === 'trekking-lencois'
+  ? passeio.privativo?.[1]
+  : passeio.precoPorPessoa
+  ? passeio.privatePricePerPerson
+  : passeio.privativo?.[1] || passeio.privatePricePerPerson}
+<span>
+  {passeio.id === 'trekking-lencois' ? ' /pessoa' : passeio.precoPorPessoa ? ' /pessoa' : ' (Grupo)'}
+</span>
             </div>
           </div>
         </div>

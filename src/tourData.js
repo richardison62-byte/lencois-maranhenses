@@ -101,7 +101,7 @@ No coletivo, o traslado 4x4 é compartilhado, tornando o passeio acessível sem 
     destaque: "Lagoa Azul + Lagoa da Prata + Guia credenciado",
     nivelDificuldade: "Fácil",
     melhorEpoca: "Jul — Set",
-    incluso: ["Guia credenciado", "Traslado 4x4 compartilhado", "Água mineral"],
+    incluso: ["Guia credenciado", "Traslado 4x4 compartilhado"],
     naoIncluso: ["Alimentação", "Protetor solar"],
     dicas: "Chegue cedo — a Lagoa Azul fica mais movimentada após as 10h. Leve roupa de banho e sandália para caminhar na areia.",
     imagens: [
@@ -115,32 +115,33 @@ No coletivo, o traslado 4x4 é compartilhado, tornando o passeio acessível sem 
   },
 
   {
-    id: "lagoa-azul-bonita-coletivo",
-    nome: "Lagoa Azul + Bonita",
-    regiao: "Barreirinhas",
-    duracao: "8h",
-    icone: "🚙",
-    descricao: "Combo compartilhado dos dois circuitos no mesmo dia.",
-    descricaoLonga: `O melhor dos dois mundos em um único dia: pela manhã você visita a Lagoa Azul e a Lagoa da Prata, e à tarde sobe as dunas da Lagoa Bonita para o pôr do sol mais famoso dos Lençóis.
+  id: "trekking-lencois",
+  nome: "Trekking nos Lençóis",
+  regiao: "Barreirinhas",
+  duracao: "6h",
+  icone: "🥾",
+  descricao: "Travessia a pé pelas dunas e lagoas dos Lençóis Maranhenses.",
+  descricaoLonga: `O Trekking nos Lençóis é a experiência mais imersiva que o parque oferece. Caminhando entre dunas, lagoas e veredas, você sente a imensidão dos Lençóis de um jeito que nenhum veículo consegue proporcionar.
 
-É o passeio mais completo disponível em Barreirinhas — quem faz esse combo sai com a sensação de ter visto tudo que os Lençóis têm de melhor em um único dia.
+O percurso passa por lagoas cristalinas onde é possível parar para banho, sobe cristas de dunas com vistas panorâmicas de 360° e atravessa corredores de areia branca que parecem de outro planeta.
 
-No coletivo, o traslado é compartilhado com outros viajantes, tornando o dia longo e animado com novas companhias.`,
-    destaque: "Lagoa Azul + Lagoa da Prata + Lagoa Bonita (pôr do sol)",
-    nivelDificuldade: "Moderado",
-    melhorEpoca: "Jun — Set",
-    incluso: ["Guia credenciado", "Traslado 4x4 compartilhado", "Água mineral (manhã e tarde)"],
-    naoIncluso: ["Almoço entre os passeios", "Protetor solar"],
-    dicas: "É um dia longo — saia bem alimentado e descansado. Leve lanche e bastante água. O almoço entre os dois passeios pode ser feito em um restaurante de Barreirinhas.",
-    imagens: [
-      "/imagens/lagoaazul.webp",
-      "/imagens/lagoabonita1.png",
-      "/imagens/lagoabonita.png",
-    ],
-    coletivo: 300,
-    privativo: { 1: 2000, 2: 2000, 3: 2200, 4: 2400, 5: 2600, 6: 2800 },
-    privatePricePerPerson: 300,
-  },
+O guia especializado conduz o grupo no ritmo de todos, com paradas estratégicas para descanso, fotos e mergulho. Uma experiência para quem quer ir além do passeio convencional.`,
+  destaque: "Caminhada nas dunas + Banho em lagoas + Vista 360°",
+  nivelDificuldade: "Moderado",
+  melhorEpoca: "Jun — Out",
+  incluso: ["Guia especializado", "Bastões de trekking (opcional)"],
+  naoIncluso: ["Alimentação", "Protetor solar", "Calçado adequado"],
+  dicas: "Use tênis ou sandália com solado firme — a areia pode ficar quente. Leve no mínimo 1,5L de água e um lanche leve. Não recomendado para pessoas com dificuldade de locomoção.",
+  imagens: [
+    "/imagens/trekking2.webp",
+    "/imagens/trekking.webp",
+    "/imagens/trekking1.webp",
+  ],
+  coletivo: null,
+privativo: { 1: 5500, 2: 8000, 3: 10500, 4: 12000, 5: 15000, 6: 18000 },
+privatePricePerPerson: 5500,
+soPrivativo: true,
+},
 
   {
     id: "circuito-atins-coletivo",
@@ -157,7 +158,7 @@ Na vila, você tem tempo livre para almoçar frutos do mar fresquíssimos e cami
     destaque: "Rio Preguiças + Dunas de Atins + Vila remota",
     nivelDificuldade: "Moderado",
     melhorEpoca: "Ano todo",
-    incluso: ["Guia credenciado", "Travessia de barco", "Traslado 4x4 compartilhado", "Água mineral"],
+    incluso: ["Guia credenciado", "Travessia de barco", "Traslado 4x4 compartilhado"],
     naoIncluso: ["Almoço (aprox. R$ 40–60)", "Bebidas"],
     dicas: "Leve dinheiro em espécie — a vila não tem máquinas de cartão. Proteja o celular da areia nas dunas.",
     imagens: [
@@ -179,18 +180,18 @@ Na vila, você tem tempo livre para almoçar frutos do mar fresquíssimos e cami
     descricao: "Circuito Caburé leva você ao encontro do Rio Preguiças com o mar em uma das pontas de areia mais bonitas do Brasil.",
     descricaoLonga: `Caburé é um lugar geograficamente único: uma estreita faixa de areia onde o Rio Preguiças encontra o Oceano Atlântico. Do lado esquerdo, água doce do rio. Do lado direito, ondas do oceano.
 
-O passeio navega pelo Rio Preguiças, passa pela Vila de Mandacaru — com seu farol histórico do século XIX — e chega a Caburé para banho e almoço à beira-rio.
+Em seguida vamos para o Caburé onde se encontram os famosos macacos e paradas para banho e almoço à beira-rio.
 
 O almoço com frutos do mar fresquíssimos direto para a cozinha é parada quase sagrada de todo viajante que passa por aqui.`,
     destaque: "Rio Preguiças + Farol de Mandacaru + Caburé (rio e mar)",
     nivelDificuldade: "Fácil",
     melhorEpoca: "Ano todo",
-    incluso: ["Guia credenciado", "Travessia de barco", "Traslado", "Água mineral"],
-    naoIncluso: ["Almoço em Caburé (aprox. R$ 50–80)", "Bebidas"],
+    incluso: ["Guia credenciado", "Travessia de barco", "Traslado"],
+    naoIncluso: ["Almoço em Caburé", "Bebidas"],
     dicas: "Reserve uma mesa no restaurante de Caburé com antecedência na alta temporada. A caldeirada de frutos do mar é o prato mais pedido.",
     imagens: [
       "/imagens/cabure1.webp",
-      "/imagens/cabure.webp",
+      "/imagens/cabure3.webp",
       "/imagens/farol.webp",
     ],
     coletivo: 150,
@@ -213,7 +214,7 @@ Não é necessária experiência prévia — o briefing e o equipamento de prote
     destaque: "Quadriciclo nas dunas + Lagoa para banho + Equipamento incluso",
     nivelDificuldade: "Moderado",
     melhorEpoca: "Ano todo",
-    incluso: ["Quadriciclo (1 unid. por dupla)", "Capacete e óculos", "Guia de segurança", "Banho em lagoa"],
+    incluso: ["Quadriciclo (1 unid. por dupla)", "Capacete e óculos", "Guia de segurança"],
     naoIncluso: ["Água e lanches", "Seguro adicional (opcional)"],
     dicas: "Use roupas que podem ficar com areia. Tênis fechado é obrigatório. O valor de R$ 650 é por dupla — um quadriciclo para duas pessoas.",
     imagens: [
@@ -349,5 +350,5 @@ export const hospedagem = {
 };
 
 export const WHATSAPP_NUMBER = "559882000000";
-export const INSTAGRAM_HANDLE = "lencoismaranhenses.roteiros";
-export const INSTAGRAM_URL = `https://instagram.com/lencoismaranhenses.roteiros`;
+export const INSTAGRAM_HANDLE = "deltaedunaexpedicoes";
+export const INSTAGRAM_URL = `https://www.instagram.com/deltaedunaexpedicoes/`;

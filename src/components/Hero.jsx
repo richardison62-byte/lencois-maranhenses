@@ -14,8 +14,8 @@ export default function Hero() {
         </h1>
 
         <p className="hero-subtitulo">
-          Dunas, lagoas cristalinas e o fim do mundo.<br />
-          Monte seu roteiro dos sonhos.
+          Seu destino dos sonhos começa aqui: <br />
+          personalize seu roteiro e explore cada detalhe do paraíso do seu jeito.
         </p>
 
         <a href="#passeios" className="hero-cta">

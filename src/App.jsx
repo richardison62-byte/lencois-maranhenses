@@ -25,19 +25,30 @@ export default function App() {
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
-
-  function abrirPasseio(passeio) {
-    setPasseioAtivo(passeio);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-
-  function voltarParaHome() {
+  useEffect(() => {
+  function onPopState() {
     setPasseioAtivo(null);
-    // Scroll de volta para a seção de passeios após um tick
     setTimeout(() => {
       document.getElementById('passeios')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, 100);
   }
+  window.addEventListener('popstate', onPopState);
+  return () => window.removeEventListener('popstate', onPopState);
+}, []);
+
+function abrirPasseio(passeio) {
+  setPasseioAtivo(passeio);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.history.pushState({ passeioId: passeio.id }, '', `#passeio-${passeio.id}`);
+}
+
+function voltarParaHome() {
+  setPasseioAtivo(null);
+  window.history.pushState(null, '', '/');
+  setTimeout(() => {
+    document.getElementById('passeios')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 100);
+}
 
   return (
     <>
@@ -51,7 +62,8 @@ export default function App() {
           onClick={() => { setPasseioAtivo(null); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
           style={{ background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'inherit' }}
         >
-          Lençóis Maranhenses
+          <img src="/imagens/logo.png" alt="Lençóis Maranhenses" 
+          style={{ height: '65px', width: 'auto', marginTop: '-10px', marginBottom: '-10px'  }} />
         </button>
         <nav className="header-nav">
           {passeioAtivo ? (
